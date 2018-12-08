@@ -1,6 +1,3 @@
-// #[macro_use]
-// extern crate clap;
-// use clap::App;
 use std::env;
 
 fn main() {
