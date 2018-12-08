@@ -1,0 +1,6 @@
+[package]
+name = "tokugamu"
+version = "0.1.0"
+authors = ["Kaushik ASP <aspkaushik@gmail.com>"]
+
+[dependencies]
