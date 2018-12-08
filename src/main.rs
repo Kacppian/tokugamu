@@ -29,7 +29,6 @@ fn main() {
 
     match query.trim() {
         "-h" => help(),
-        "-q" => quit(),
         "-n" => new_game::start_game(),
         _ => println!("Please select a valid option.")
     }
@@ -37,9 +36,4 @@ fn main() {
 
 fn help() -> () {
     println!("Please raise an issue on our github page - https://github.com/Kacppian/tokugamu");
-}
-
-fn quit() -> () {
-    println!("Please come back.....");
-    std::process::exit(0);
 }
