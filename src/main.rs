@@ -28,9 +28,14 @@ fn main() {
 
     match query.trim() {
         "-h" => println!("Yay"),
-        "-qc" => println!("Yay"),
-        "-q" => println!("quit convo"),
+        "-q" => quit(),
+        "-qc" => println!("quit convo"),
         "-n" => println!("New"),
         _ => println!("Sad")
     }
+}
+
+fn quit() -> () {
+    println!("Please come back.....");
+    std::process::exit(0);
 }
