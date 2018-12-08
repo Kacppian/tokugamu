@@ -1,5 +1,7 @@
 use std::env;
 
+mod new_game;
+
 fn main() {
     println!("
         ##      ##     #     # ####### #        #####  ####### #     # #######
@@ -28,9 +30,8 @@ fn main() {
     match query.trim() {
         "-h" => help(),
         "-q" => quit(),
-        "-qc" => println!("quit convo"),
-        "-n" => println!("New"),
-        _ => println!("Sad")
+        "-n" => new_game::start_game(),
+        _ => println!("Please select a valid option.")
     }
 }
 
